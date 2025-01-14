@@ -57,17 +57,18 @@
             <h2>글쓰기</h2>
                 <meta charset="UTF-8">
                 <title>네이버 지도 예제</title>
-                <script type="text/javascript" 
-                    src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ncp_iam_BPAMKR2KUZbmdq4ZHYR0"></script>
-                <!-- 기본 지도 -->
+                
+                <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ncp_iam_BPAMKR2KUZbmdq4ZHYR0"></script>
+                <!-- 기본 지도 -->    
                 <div id="map" style="width:100%;height:400px;"></div>
+                
                 <script>
-                  var mapOptions = {
+                var mapOptions = {
                     center: new naver.maps.LatLng(37.3595704, 127.105399),
                     zoom: 10
-                  };
+                };
                 
-                  var map = new naver.maps.Map('map', mapOptions);
+                var map = new naver.maps.Map('map', mapOptions);
                 </script>
             
             <p>글쓰기 팁이나 작품을 공유합니다.</p>
