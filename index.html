@@ -49,33 +49,31 @@
         <a href="map.html">지도</a>
     </nav>
     <div class="content">
-                <section id="writing">
+        <section id="writing">
             <h2>네이버 지도</h2>
                 <meta charset="UTF-8">
                 <title>네이버 지도 예제</title>
                 
                 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=r3btb9jhtu"></script>
                 <!-- 기본 지도 -->    
-                <div id="map" style="width:100%;height:400px;"></div>
+                <div id="map_naver" style="width:100%;height:400px;"></div>
                 
                 <script>
-                var mapOptions = {
-                    center: new naver.maps.LatLng(37.3595704, 127.105399),
-                    zoom: 10
-                };
+                    var mapOptions = {
+                        center: new naver.maps.LatLng(37.3595704, 127.105399),
+                        zoom: 10
+                    };
                 
-                var map = new naver.maps.Map('map', mapOptions);
+                    var map = new naver.maps.Map('map_naver', mapOptions);
                 </script>
-            
-            <p>글쓰기 팁이나 작품을 공유합니다.</p>
-                              
+                                          
                 <!-- 각자 발급받은 Client ID 값 넣기 -->
-            <script>
-                var map = new naver.maps.Map('map', {
-                center: new naver.maps.LatLng(37.5665, 126.9780),
-                zoom: 10
-                });
-            </script>
+                <script>
+                    var map = new naver.maps.Map('map', {
+                    center: new naver.maps.LatLng(37.5665, 126.9780),
+                    zoom: 10
+                    });
+                </script>
             
         </section>
 
@@ -83,7 +81,8 @@
         <section id="ai">
             <h2>다음지도</h2>
             <p>다음지도를 보여줍니다.</p>
-            	<div id="map" style="width:500px;height:400px;"></div>
+            
+            	<div id="map_daum" style="width:500px;height:400px;"></div>
             	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8d2d116d6a534a98e73133808f5843a6"></script>
             	<script>
             		var container = document.getElementById('map');
