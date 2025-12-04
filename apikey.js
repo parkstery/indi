@@ -1,3 +1,0 @@
-// apikey.js
-const GOOGLE_API_KEY = "AIzaSyBYXu5yKdW71VuKmI-N2M2xbvMaYTK2HCg";
-const KAKAO_API_KEY = "8d2d116d6a534a98e73133808f5843a6";
